@@ -105,6 +105,7 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <scm-api-plugin.version>2.1.0</scm-api-plugin.version>
   </properties>
 
   <dependencies>
@@ -113,6 +114,11 @@
       <artifactId>junit</artifactId>
       <version>4.8.1</version>
       <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.jenkins-ci.plugins</groupId>
+      <artifactId>scm-api</artifactId>
+      <version>${scm-api-plugin.version}</version>
     </dependency>
   </dependencies>
 
