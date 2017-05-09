@@ -1,0 +1,85 @@
+<j:jelly
+    xmlns:j="jelly:core"
+    xmlns:st="jelly:stapler"
+    xmlns:d="jelly:define"
+    xmlns:l="/lib/layout"
+    xmlns:t="/lib/hudson"
+    xmlns:f="/lib/form">
+
+    <f:entry title="Manifest Repository Url" field="manifest" help="/plugin/repo/help-manifestRepositoryUrl.html">
+        <f:textbox/>
+    </f:entry>
+
+    <f:advanced>
+
+        <f:entry title="Manifest Branch" field="manifestBranch" help="/plugin/repo/help-manifestBranch.html">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry title="Manifest File" field="manifestFile" help="/plugin/repo/help-manifestFile.html">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry title="Group" field="manifestGroup" help="/plugin/repo/help-manifestGroup.html">
+            <<f:textbox/>
+        </f:entry>
+
+        <f:entry title="IgnoreChanges" field="ignoreProjects" help="/plugin/repo/help-ignoreChanges.html">
+            <f:textarea rows="3" />
+        </f:entry>
+
+        <f:entry title="Destination Directory" field="destinationDir" help="/plugin/repo/help-destinationDir.html">
+            <<f:textbox/>
+        </f:entry>
+
+        <f:entry title="Repo Url" field="repoUrl" help="/plugin/repo/help-repoUrl.html">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry title="Mirror Directory" field="mirrorDir" help="/plugin/repo/help-mirrorDir.html">
+            <f:textbox/>
+        </f:entry>
+
+        <f:entry title="Jobs" field="jobs" help="/plugin/repo/help-jobs.html">
+            <f:textbox clazz="number" />
+        </f:entry>
+
+        <f:entry title="Depth" field="depth" help="/plugin/repo/help-depth.html">
+            <f:textbox clazz="number" />
+        </f:entry>
+
+        <f:entry title="Current Branch" field="currentBranch" help="/plugin/repo/help-currentBranch.html">
+            <f:checkbox checked="true" />
+        </f:entry>
+
+        <f:entry title="Reset first" field="resetFirst" help="/plugin/repo/help-resetFirst.html">
+            <f:checkbox checked="false" />
+        </f:entry>
+
+        <f:entry title="Quiet" field="quiet" help="/plugin/repo/help-quiet.html">
+            <f:checkbox checked="true" />
+        </f:entry>
+
+        <f:entry title="Force Sync" field="forceSync" help="/plugin/repo/help-forceSync.html">
+            <f:checkbox checked="false" />
+        </f:entry>
+
+        <f:entry title="No tags" field="noTags" help="/plugin/repo/help-noTags.html">
+            <f:checkbox checked="false" />
+        </f:entry>
+
+        <f:entry title="Trace" field="trace" help="/plugin/repo/help-trace.html">
+            <f:checkbox checked="false" />
+        </f:entry>
+
+        <f:entry title="Show all changes" field="showAllChanges" help="/plugin/repo/help-showAllChanges.html">
+            <f:checkbox checked="false" />
+        </f:entry>
+
+        <f:entry title="Local Manifest" field="localManifest" help="/plugin/repo/help-localManifest.html">
+            <f:textarea rows="10" />
+        </f:entry>
+
+    </f:advanced>
+
+</j:jelly>
